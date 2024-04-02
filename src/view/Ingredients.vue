@@ -38,7 +38,7 @@ const searchIngredients = computed(() => {
 function openIngredient(ingredient) {
     store.commit('setIngredient', ingredient)
     router.push({
-        name: "byIngredient",
+        name: "byIngredients",
         params: { ingredient: ingredient.strIngredient },
     });
 }
